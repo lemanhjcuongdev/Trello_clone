@@ -1,10 +1,48 @@
-body {
+:root {
+  --primary-color: #ff7433;
+  --light-text: #fff;
+  --dark-text: #000;
+  --dark-grey: #888;
+  --grey: #ccc;
+  --light-grey: #eee;
+  --button-background: rgba(255, 255, 255, 0.2);
+  --button-background-hover: rgba(255, 255, 255, 0.3);
+  --light-button-background: #DFE1E6;
+  --feature-button-background: #0079bf;
+}
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://a.trellocdn.com/prgb/assets/cfe7f3d3d204a3b9840a.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 10px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #091e4214;
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #dadbe2;
 }
 
 code {
